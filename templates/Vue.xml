@@ -1,0 +1,20 @@
+<templateSet group="Vue">
+  <template name="von" value="@click=&quot;$handler$($arg$, $event$)&quot;" description="Vue v-on click handler with arguments" toReformat="true" toShortenFQNames="true">
+    <variable name="handler" expression="" defaultValue="&quot;handler&quot;" alwaysStopAt="true" />
+    <variable name="arg" expression="" defaultValue="&quot;arg&quot;" alwaysStopAt="true" />
+    <variable name="event" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="vue1" value="const app = new Vue({&#10;            el: '#app', //element,vue作用的标签&#10;            data: {&#10;                message: &quot;Hello&quot;&#10;            }  &#10;        });" description="new vue" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="vue2" value="const vm = new Vue({&#10;        el: '#app',&#10;        data: {&#10;            site: &quot;菜鸟教程&quot;,&#10;            url: &quot;www.runoob.com&quot;,&#10;            alexa: &quot;10000&quot;,&#10;            kilometers: 0,&#10;            meters:0&#10;        },&#10;        //方法&#10;        methods: {&#10;            details: function () {&#10;                return this.site + &quot; - 学的不仅是技术，更是梦想！&quot;;&#10;            }&#10;        },&#10;        //计算属性&#10;        computed: {&#10;            // 计算属性的 getter&#10;            reversedMessage: function () {&#10;                // `this` 指向 vm 实例&#10;                return this.message.split('').reverse().join('')&#10;            }&#10;        },&#10;        //监听属性&#10;        watch : {&#10;            kilometers:function(val) {&#10;                this.kilometers = val;&#10;                this.meters = this.kilometers * 1000&#10;            },&#10;            meters : function (val) {&#10;                this.kilometers = val/ 1000;&#10;                this.meters = val;&#10;            }&#10;        }&#10;    })" description="new vue" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,3 @@
+<templateSet group="JavaScript">
+  <template name="newvue" value="var app = new Vue({&#10;            el: '#app1',&#10;            data: {&#10;                message: &quot;Hello&quot;&#10;            }&#10; &#10; &#10;        });" description="new vue" toReformat="true" toShortenFQNames="true" />
+</templateSet>
